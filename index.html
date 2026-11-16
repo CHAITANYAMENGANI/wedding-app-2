@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aditi &amp; Akshay | Wedding Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Shared floral artwork -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <radialGradient id="roseG"><stop offset="0" stop-color="#fde4e8"/><stop offset=".6" stop-color="#f6bfca"/><stop offset="1" stop-color="#ec9fb1"/></radialGradient>
+    <radialGradient id="budG"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#f9d3da"/></radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation=".7"/></filter>
+    <symbol id="leaf" viewBox="0 -16 50 32" overflow="visible">
+      <path d="M0 0C12-15 34-15 48 0C34 15 12 15 0 0Z"/><path d="M2 0H44" stroke="#fff" stroke-opacity=".45" stroke-width="1" fill="none"/>
+    </symbol>
+    <symbol id="rose" viewBox="-30 -30 60 60" overflow="visible">
+      <circle r="28" fill="url(#roseG)"/>
+      <g fill="none" stroke="#e58aa0" stroke-opacity=".65" stroke-width="1.6" stroke-linecap="round">
+        <path d="M-18 4C-16-14 8-22 18-6"/><path d="M-10 10C-12-4 4-12 12 0"/><path d="M-3 9C-5 1 4-3 7 4"/><path d="M-22-6C-10 22 16 20 22 2"/>
+      </g>
+    </symbol>
+    <symbol id="cluster" viewBox="0 0 200 200" overflow="visible">
+      <g filter="url(#soft)">
+        <g fill="#9db59a" opacity=".9">
+          <use href="#leaf" x="70" y="60" width="62" height="40" transform="rotate(8 70 60)"/>
+          <use href="#leaf" x="60" y="76" width="70" height="44" transform="rotate(52 60 76)"/>
+          <use href="#leaf" x="46" y="80" width="62" height="40" transform="rotate(96 46 80)"/>
+          <use href="#leaf" x="96" y="34" width="54" height="34" transform="rotate(-20 96 34)"/>
+        </g>
+        <g fill="#7f9c7e" opacity=".8">
+          <use href="#leaf" x="84" y="70" width="58" height="34" transform="rotate(30 84 70)"/>
+          <use href="#leaf" x="36" y="96" width="50" height="30" transform="rotate(74 36 96)"/>
+        </g>
+        <g fill="#d9bf7a" opacity=".85">
+          <use href="#leaf" x="110" y="52" width="56" height="26" transform="rotate(-4 110 52)"/>
+          <use href="#leaf" x="52" y="118" width="56" height="26" transform="rotate(88 52 118)"/>
+          <use href="#leaf" x="92" y="92" width="48" height="22" transform="rotate(44 92 92)"/>
+        </g>
+        <use href="#rose" x="28" y="24" width="72" height="72"/>
+        <use href="#rose" x="86" y="6" width="46" height="46"/>
+        <use href="#rose" x="8" y="88" width="50" height="50"/>
+        <circle cx="140" cy="38" r="9" fill="url(#budG)"/><circle cx="140" cy="38" r="2.5" fill="#f1c84b"/>
+        <circle cx="34" cy="150" r="8" fill="url(#budG)"/><circle cx="34" cy="150" r="2.3" fill="#f1c84b"/>
+        <circle cx="104" cy="64" r="4" fill="#e9a23b"/><circle cx="72" cy="104" r="3.5" fill="#e9a23b"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- Cover -->
+<div id="cover">
+  
+  
+  <div class="cover-inner">
+    <div class="caps" style="color:#a08a5c">Wedding Invitation</div>
+    <div class="names script">Aditi &amp; Akshay</div>
+    
+    <div class="dear">You are warmly invited</div>
+    <button id="openBtn">Tap to open</button>
+  </div>
+</div>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    
+    <div class="namah2 reveal">|| Om Shree Ganeshaya Namah ||</div>
+    <div class="hosts reveal">Smt. Anupa &amp; Shri V C Sajjanar, IPS</div>
+    <p class="request reveal">request the honour of your gracious presence on the auspicious occasion of the wedding celebration of</p>
+    <div class="name script reveal">Aditi</div>
+    <div class="weds script reveal">and</div>
+    <div class="name script reveal" style="margin-top:0">Akshay</div>
+    <div class="when reveal">10 – 14 December 2026 · Hyderabad</div>
+  </section>
+
+  <div class="page">
+  <section style="padding:44px 30px 50px">
+    <div class="shloka reveal" style="margin-top:0">
+      <div class="dev">वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।<br>निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥</div>
+      <hr>
+      <div class="tr">Vakratunda Mahakaya Suryakoti Samaprabha<br>Nirvighnam Kuru Me Deva Sarva Kaaryeshu Sarvada</div>
+    </div>
+  </section>
+
+  <!-- Save the date -->
+  
+  <section class="save paper">
+    <h2 class="reveal">Save the Date</h2>
+    <div class="scratch reveal">
+      <div class="under"><b>14 December 2026</b><span class="caps" style="color:#a08a5c;margin-top:6px">Monday · Hyderabad</span></div>
+      <canvas id="scratch" aria-label="Scratch to reveal the wedding date"></canvas>
+    </div>
+    <p class="hint reveal" id="hint">Rub the red card with your finger</p>
+    <div class="countdown reveal" aria-label="Countdown to the wedding muhurtham">
+      <div><b id="cd-d">0</b><span>Days</span></div>
+      <div><b id="cd-h">0</b><span>Hours</span></div>
+      <div><b id="cd-m">0</b><span>Mins</span></div>
+      <div><b id="cd-s">0</b><span>Secs</span></div>
+    </div>
+  </section>
+  
+
+  </div>
+  <div class="plain">
+  <!-- Events -->
+  <section class="events">
+    <h2 class="script reveal">The Celebrations</h2>
+    <p class="sub reveal">It is time for our family to come together, create beautiful memories, and celebrate with laughter, music and traditions.</p>
+
+    <div class="daydate script reveal">10 December</div><div class="dow caps reveal">Thursday</div>
+    <article class="event reveal">
+      <h3>Pellikuturu</h3>
+      <div class="tag">Bride in Bloom 🌸</div>
+      <div class="meta"><span>Time</span> 7:30 AM</div>
+      <div class="meta"><span>Dress code</span> Traditional attire</div>
+      <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Vessella+Woods+Hyderabad">📍 Vessella Woods</a>
+    </article>
+    <article class="event reveal">
+      <h3>Haldi</h3>
+      <div class="tag">The Golden Hour Glow ☀️</div>
+      <div class="meta"><span>Time</span> 4:30 PM</div>
+      <div class="meta"><span>Colour palette</span> Yellow</div>
+      <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Richmond+Villas+Hyderabad">📍 Richmond Villas</a>
+    </article>
+
+    <div class="daydate script reveal">11 December</div><div class="dow caps reveal">Friday</div>
+    <article class="event reveal">
+      <h3>Mehendi</h3>
+      <div class="tag">Whispers of Green 🍃</div>
+      <div class="meta"><span>Time</span> 6:30 PM</div>
+      <div class="meta"><span>Colour palette</span> Green</div>
+      <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Richmond+Villas+Hyderabad">📍 Richmond Villas</a>
+    </article>
+
+    <div class="daydate script reveal">12 December</div><div class="dow caps reveal">Saturday</div>
+    <article class="event reveal">
+      <h3>Sangeet</h3>
+      <div class="tag">Under the Stars 🪩</div>
+      <div class="meta"><span>Time</span> 6:30 PM</div>
+      <div class="meta"><span>Dress code</span> Glam n Bling</div>
+      <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=ESC+Convention+Hyderabad">📍 ESC Convention</a>
+    </article>
+
+    <div class="daydate script reveal">13 December</div><div class="dow caps reveal">Sunday</div>
+    <article class="event reveal">
+      <h3>Edurugolludu</h3>
+      <div class="meta"><span>Time</span> 4:30 PM</div>
+      <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=K+Convention+Hyderabad">📍 K Convention</a>
+    </article>
+
+    <div class="daydate script reveal">14 December</div><div class="dow caps reveal">Monday</div>
+    <article class="event reveal">
+      <h3>Wedding</h3>
+      <div class="tag">Threads of Infinity ♾️</div>
+      <div class="meta"><span>Muhurtham</span> 3:30 AM</div>
+      <div class="meta"><span>Reception</span> 11:30 AM</div>
+      <div class="meta"><span>Dress code</span> Ethnic Elegance</div>
+      <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=K+Convention+Hyderabad">📍 K Convention</a>
+    </article>
+  </section>
+
+  </div>
+  <div class="page">
+  <!-- Closing -->
+  <section class="closing">
+    
+    <p class="sub reveal">Your presence and blessings will make Aditi's wedding a truly memorable family celebration.</p>
+    <p class="reveal" style="margin-top:20px;font-style:italic">Warm regards,</p>
+    <p class="sign script reveal">Anupa &amp; V C Sajjanar</p>
+  </section>
+
+  </div>
+  <footer>ADITI ✦ AKSHAY · 14.12.2026</footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
